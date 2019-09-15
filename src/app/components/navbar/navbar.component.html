@@ -1,7 +1,7 @@
 <div class="container is-fullhd">
   <nav class="navbar is-dark fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" [routerLink]="['/home']">
+      <a class="navbar-item">
         Empresa X
       </a>
 
@@ -21,15 +21,15 @@
 
           <div class="navbar-dropdown">
 
-            <a class="navbar-item">
+            <a class="navbar-item" [routerLink]="['/home/quienes-somos']">
               ¿Quienes somos?
             </a>
 
-            <a class="navbar-item">
+            <a class="navbar-item" [routerLink]="['/home/mision']">
               Misión
             </a>
 
-            <a class="navbar-item">
+            <a class="navbar-item" [routerLink]="['/home/vision']">
               Visión
             </a>
 
