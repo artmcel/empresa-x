@@ -14,6 +14,7 @@ import { AuditoriaComponent } from './components/servicios/children/auditoria/au
 import { ContableComponent } from './components/servicios/children/contable/contable.component';
 import { FinanciamientoComponent } from './components/servicios/children/financiamiento/financiamiento.component';
 import { CreditoComponent } from './components/servicios/children/credito/credito.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CreditoComponent } from './components/servicios/children/credito/credit
     AuditoriaComponent,
     ContableComponent,
     FinanciamientoComponent,
-    CreditoComponent
+    CreditoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
