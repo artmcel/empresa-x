@@ -1,2 +1,25 @@
-<p>servicios works!</p>
+<section class="hero is-fullheight is-warning is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Nuestros servicios.
+      </h1>
+      <h2 class="subtitle">
+        contamos con los mejores servicios financieros del mercado.
+      </h2>
+      <div class="columns">
+        <div class="column" *ngFor="let servicio of servicios">
+          <article class="message is-dark">
+            <div class="message-header">
+              <p>{{ servicio.titulo }}</p>
+            </div>
+            <div class="message-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla.
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <router-outlet></router-outlet>

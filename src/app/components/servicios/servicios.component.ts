@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiciosComponent implements OnInit {
 
+  servicios: Object = [
+    {
+      titulo: "Auditorias"
+    },
+    {
+      titulo: "Registro Contable"
+    },
+    {
+      titulo: "Financiamientos"
+    },
+    {
+      titulo: "Creditos Grupales"
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {
