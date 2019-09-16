@@ -16,7 +16,9 @@
       <div class="navbar-start">
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" [routerLink] = "['/home']" >
-            Home
+            <span class="icon is-small">
+              <i class="fas fa-home"></i>
+            </span>
           </a>
 
           <div class="navbar-dropdown">
@@ -42,28 +44,29 @@
           </a>
 
           <div class="navbar-dropdown">
-            <a class="navbar-item">
+            <a class="navbar-item" [routerLink]="['/servicios/auditoria']">
               Auditorias
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" [routerLink]="['/servicios/contable']">
               Registro contable
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" [routerLink]="['/servicios/financiamiento']">
               Financiamientos
             </a>
-            <a class="navbar-item">
+            <a class="navbar-item" [routerLink]="['/servicios/credito']">
               Creditos grupales
             </a>
           </div>
         </div>
 
         <a class="navbar-item" [routerLink]="['/blog']">
-          Blog
+          <span class="icon is-small">
+            <i class="fas fa-book-open"></i>
+          </span>
         </a>
 
       </div>
 
     </div>
   </nav>
-
 </div>

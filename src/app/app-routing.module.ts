@@ -11,6 +11,11 @@ import { QuienesComponent } from './components/home/children/quienes/quienes.com
 import { MisionComponent } from './components/home/children/mision/mision.component';
 import { VisionComponent } from './components/home/children/vision/vision.component';
 
+import { AuditoriaComponent } from './components/servicios/children/auditoria/auditoria.component';
+import { ContableComponent } from './components/servicios/children/contable/contable.component';
+import { CreditoComponent } from './components/servicios/children/credito/credito.component';
+import { FinanciamientoComponent } from './components/servicios/children/financiamiento/financiamiento.component';
+
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home'},
@@ -23,7 +28,16 @@ const routes: Routes = [
       { path: 'vision', component: VisionComponent },
     ]
   },
-  { path: 'servicios', component: ServiciosComponent },
+  {
+    path: 'servicios',
+    component: ServiciosComponent,
+    children: [
+      { path: 'auditoria', component: AuditoriaComponent },
+      { path: 'contable', component: ContableComponent },
+      { path: 'credito', component: CreditoComponent },
+      { path: 'financiamiento', component: FinanciamientoComponent }
+    ]
+  },
   { path: 'blog', component: BlogComponent },
   { path: '**', component: HomeComponent }
 ];

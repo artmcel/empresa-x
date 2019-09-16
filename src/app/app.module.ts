@@ -10,6 +10,10 @@ import { BlogComponent } from './components/blog/blog.component';
 import { QuienesComponent } from './components/home/children/quienes/quienes.component';
 import { MisionComponent } from './components/home/children/mision/mision.component';
 import { VisionComponent } from './components/home/children/vision/vision.component';
+import { AuditoriaComponent } from './components/servicios/children/auditoria/auditoria.component';
+import { ContableComponent } from './components/servicios/children/contable/contable.component';
+import { FinanciamientoComponent } from './components/servicios/children/financiamiento/financiamiento.component';
+import { CreditoComponent } from './components/servicios/children/credito/credito.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { VisionComponent } from './components/home/children/vision/vision.compon
     BlogComponent,
     QuienesComponent,
     MisionComponent,
-    VisionComponent
+    VisionComponent,
+    AuditoriaComponent,
+    ContableComponent,
+    FinanciamientoComponent,
+    CreditoComponent
   ],
   imports: [
     BrowserModule,
