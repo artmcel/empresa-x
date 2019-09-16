@@ -1,1 +1,28 @@
-<p>blog works!</p>
+<div class="card" *ngFor="let blog of blogs">
+  <div class="card-content">
+    <p class="title">
+      {{ blog.nombre }}
+    </p>
+    <p class="subtitle">
+      {{ blog.titulo }}
+    </p>
+    <div class="content">
+      {{ blog.contenido }}
+    </div>
+  </div>
+
+  <footer class="card-footer">
+    <p class="card-footer-item">
+      <span>
+        Share on <a href=""><i class="fab fa-twitter"></i>Twitter</a>
+      </span>
+    </p>
+    <p class="card-footer-item">
+      <span>
+        Share on <a href=""><i class="fab fa-facebook"></i>Facebook</a>
+      </span>
+    </p>
+  </footer>
+  <hr>
+</div>
+<br>
